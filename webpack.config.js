@@ -31,6 +31,10 @@ module.exports = [{
 {
   entry: './src/server.ts',
   target: "node",
+  node: {
+    __dirname: false,
+    __filename: false,
+  },
   module: {
     rules: [
       {

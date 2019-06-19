@@ -11,7 +11,7 @@ router.use(
 
 app.use(router)
 app.get('/', function (req: Request, res: Response) {
-    res.sendFile(path.join(__dirname, 'resources', 'index.html'))
+    res.sendFile(path.join(__dirname,'..', 'src', 'resources', 'index.html'))
 })
 app.listen(PORT, () => {
     console.log(`Boilerplate is running on ${PORT}`)
