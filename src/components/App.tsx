@@ -1,7 +1,11 @@
 import React from "react";
+import logo from "../resources/images/react.png";
 
 export const App = () => {
   return(
-    <h1>React is online</h1>
+    <div>
+      <h1>React is online</h1>
+      <img src={logo}/> 
+    </div>
   )
 }

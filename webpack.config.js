@@ -8,7 +8,16 @@ module.exports = {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/
-      }
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {},
+          },
+        ],
+      },
     ]
   },
   resolve: {
