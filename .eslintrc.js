@@ -21,6 +21,10 @@ module.exports = {
     '@typescript-eslint'
   ],
   'rules': {
-    'semi': false,
+    'semi': 0,
+    'react/jsx-uses-react': 2,
+    'react/jsx-uses-vars': 2,
+    "@typescript-eslint/semi": 2,
+    "@typescript-eslint/indent": 2,
   }
 }

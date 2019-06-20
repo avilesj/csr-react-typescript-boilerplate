@@ -1,0 +1,7 @@
+dist/
+*.html
+*.png
+*.jpg
+*.svg
+*.css
+*.sass
