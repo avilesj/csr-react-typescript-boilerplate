@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import logo from '../resources/images/react.png';
 import styled from 'styled-components';
 
-const StyledText = styled.StyledText`
+const StyledText = styled.h1`
   color: red;
   font-size: 2em;
   font-family: Verdana;
@@ -11,7 +11,7 @@ const StyledText = styled.StyledText`
 export const App = (): ReactElement => {
     return (
         <div>
-            <StyledText>React is online</StyledText>
+            <StyledText>{'React is online'}</StyledText>
             <img src={logo}/>
         </div>
     )

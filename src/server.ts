@@ -1,7 +1,10 @@
+import dotenv from "dotenv";
+dotenv.config()
 import path from 'path'
 import express, { Response, Request } from 'express'
 
-const PORT = 8080
+const PORT = process.env.PORT || 8080;
+const APPNAME = process.env.APP_NAME || "Boilerplate";
 const app = express()
 const router = express.Router()
 
@@ -13,6 +16,7 @@ app.use(router)
 app.get('/', function (req: Request, res: Response) {
     res.sendFile(path.join(__dirname,'..', 'src', 'resources', 'index.html'))
 })
+
 app.listen(PORT, () => {
-    console.log(`Boilerplate is running on ${PORT}`)
+    console.log(`${APPNAME} is running on ${PORT}`)
 })
