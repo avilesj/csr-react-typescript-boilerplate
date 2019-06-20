@@ -16,3 +16,6 @@ Includes:
 - Webpack with:
   - ts-loader
   - file-loader
+  - Webpack-dev-server:
+  	- HMR
+	- react-hot-loader
