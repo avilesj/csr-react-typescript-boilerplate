@@ -1,6 +1,8 @@
 const path = require('path');
 
 module.exports = [{
+    // React config
+    name: 'front',
     entry: './src/rendering/index.tsx',
     module: {
         rules: [
@@ -29,6 +31,8 @@ module.exports = [{
     }
 },
 {
+    // Server config
+    name: 'server',
     entry: './src/server.ts',
     target: 'node',
     node: {

@@ -1,8 +1,9 @@
+import { hot } from 'react-hot-loader';
 import React, { ReactElement } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { HomeScreen } from './screens/HomeScreen/HomeScreen';
 
-export const App = (): ReactElement => {
+const App = (): ReactElement => {
     return (
         <BrowserRouter>
             <Switch>
@@ -11,3 +12,5 @@ export const App = (): ReactElement => {
         </BrowserRouter>
     );
 };
+
+export default hot(module)(App);
