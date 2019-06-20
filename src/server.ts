@@ -14,6 +14,7 @@ router.use(
 
 app.use(router);
 app.get('/', function (req: Request, res: Response) {
+    console.log(process.env.NODE_ENV);
     res.sendFile(path.join(__dirname, '..', 'src', 'resources', 'index.html'));
 });
 
