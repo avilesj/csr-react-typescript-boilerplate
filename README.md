@@ -19,3 +19,7 @@ Includes:
   - Webpack-dev-server:
   	- HMR
 	- react-hot-loader
+
+# Important
+
+You must change your `.gitignore` file so your `.env` isn't published in the repo.
