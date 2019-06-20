@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@hot-loader/react-dom": "16.8.6",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "lodash": "^4.17.11",

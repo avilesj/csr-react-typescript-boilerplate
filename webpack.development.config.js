@@ -34,7 +34,8 @@ module.exports = {
     resolve: {
         extensions: [ '.tsx', '.ts', '.js' ],
         alias: {
-            'styled-components': path.resolve(__dirname, 'node_modules', 'styled-components')
+            'styled-components': path.resolve(__dirname, 'node_modules', 'styled-components'),
+            'react-dom': '@hot-loader/react-dom'
         }
     },
     output: {
