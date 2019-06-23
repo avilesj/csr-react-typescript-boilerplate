@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/rendering/index.tsx',
     mode: 'development',
     plugins: [
-        new HtmlWebpackPlugin({ template: './src/resources/index.html' })
+        new HtmlWebpackPlugin({ template: './src/resources/index.html', inject: false })
     ],
     devServer: {
         contentBase: path.join(__dirname, 'dist', 'web'),
