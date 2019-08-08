@@ -1,11 +1,13 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
     entry: './src/rendering/index.tsx',
     mode: 'development',
     plugins: [
-        new HtmlWebpackPlugin({ template: './src/resources/index.html', inject: false })
+        new HtmlWebpackPlugin({ template: './src/resources/index.html', inject: false }),
+        new Dotenv()
     ],
     devServer: {
         contentBase: path.join(__dirname, 'dist', 'web'),

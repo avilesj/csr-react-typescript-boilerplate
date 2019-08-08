@@ -11,7 +11,7 @@ const StyledText = styled.h1`
 export const HomeScreen = (): ReactElement => {
     return (
         <div>
-            <StyledText>{'React is online'}</StyledText>
+            <StyledText>{`React is online at ${process.env.PORT}`}</StyledText>
             <img src={logo}/>
         </div>
     );
